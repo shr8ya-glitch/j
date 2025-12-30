@@ -1,12 +1,6 @@
-import random
-play=True
-n=str(random.randint(10,20))
-print("Guess a number between 10 and 20")
-while play:
-    guess=input("Give me best guess")
-    if n==guess:
-        print("You win")
-        print("number is ",n)
-        break
-    else:
-        print("try again")
+from datetime import datetime,date,time
+today=date.today()
+now=datetime.now()
+print("date=",today)
+print("Current time", now)
+print("date components:",today.year,today.month, today.day)

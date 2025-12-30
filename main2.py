@@ -1,15 +1,25 @@
-import math
-
-print("the ceil value of 23.56 is", str(math.ceil(23.56)))
-
-print("the floor value of 23.56 is", str(math.floor(23.56)))
-
-x=10
-
-y=-15
-
-print("the copy sign is",str(math.copysign(x,y)))
-
-print("the fact of numbers",str(math.factorial(x)))
-
-print("the gcd of numbers",str(math.gcd(x,y)))
+def hc(n):
+    return n*140
+def pr(c):
+if "Charlotte"==c:
+    return 183
+elif "Tampa"==c:
+    return 220
+elif "Pittusburgh"==c:
+    return 222
+elif "Los Angeles"==c:
+    return 475
+def rc(d):
+    if d>=7:
+    return 40*d-50
+   elif d>=3:
+    return 40*d-20
+else:
+return 40*d
+def tc(c,d,s):
+    return rc(d)+hc(d)+pr(c)+s
+print("car rental:",rc(5))
+print("Plane ride:",pr("Los Angeles"))
+print("hotel cost:",hc(7))
+print("total cost:",tc("Los Angeles",7,500))
+print("trip cost",tc("Tampa",6,500))
