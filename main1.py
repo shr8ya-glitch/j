@@ -1,11 +1,12 @@
-import random
-import time
+def match(w):
+    c=0
+    l=[]
+    for word in w:
+        if len(w)>1 and w[0]==w[-1]:
+            c=c+1
+            l.append(w)
+    print("words with repeat characters:",l)
+    return c
+a=match(['abc','reyaan','amrutha','aca'])
+print("same count=",a)
 
-def get(s,e):
-    print("random date:")
-    r=random.random()
-    df='%m/%d/%y'
-    st=time.mktime(time.strptime(s,df))
-    et=time.mktime(time.strptime(e,df))
-    print(r)
-    print("random date=", (get("1/12016","2/2/2025")))

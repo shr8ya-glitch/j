@@ -1,6 +1,11 @@
-from datetime import datetime,date,time
-today=date.today()
-now=datetime.now()
-print("date=",today)
-print("Current time", now)
-print("date components:",today.year,today.month, today.day)
+list1=[]
+print(list1)
+
+numbers=[1,2,3,4,5]
+print(numbers)
+
+t=[100,200,30]*3
+print(t)
+
+a=[10,20,30,40,50]
+print(a[::-1])
